@@ -1,0 +1,57 @@
+.block {
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    background-color: #bbfbbc;
+}
+
+.block img {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+
+.message {
+    margin-left: 25px;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px 15px 15px 0;
+    background: #8b8f93;
+}
+
+.message::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(60px at top left, transparent 49%, #8b8f93 51%) no-repeat right bottom;
+}
+
+.textMessage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    color: blueviolet;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text {
+    color: white;
+    font-size: 16px ;
+}
+.time{
+    color: black;
+    opacity: 30%;
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,1 +1,1 @@
-# IT`-inkubator homeworks
+# IT-inkubator homeworks
