@@ -1,7 +1,33 @@
 .affairs {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .block  {
     background-color:lightyellow ;
+}
+
+.isDone {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button {
+    margin-left: 15px;
+    background-color: #f3e99a;
+    border-radius: 4px;
+    transition: 0.3s linear;
+}
+
+.button:hover {
+    background-color: darkkhaki;
+}
+
+.activeFilter {
+    background-color: #45aaf6;
+    transition: 0.3s linear;
+    color: white;
+}
+
+.buttonFilter {
+    background-color: #a6dbff;
 }
