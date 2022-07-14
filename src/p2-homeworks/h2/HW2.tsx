@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import classes from './Affairs.module.css'
 
 export type AffairPriorityType = 'high' | 'low' | 'middle'
 export type AffairType = {
@@ -17,7 +18,7 @@ const defaultAffairs: AffairType[] = [
     {_id: 5, name: 'html & css', priority: 'middle'},
 ]
 
-export const filterAffairs = (affairs: AffairType[], filter: FilterType):AffairType[] => {
+export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => {
     if (filter === 'all') return affairs
     else return affairs.filter(a => a.priority === filter)
 }
@@ -34,15 +35,15 @@ function HW2() {
 
     return (
         <div>
-            <hr/>
             homeworks 2
-
             {/*should work (должно работать)*/}
-            <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
+            <div className={classes.block}>
+                <Affairs
+                    data={filteredAffairs}
+                    setFilter={setFilter}
+                    deleteAffairCallback={deleteAffairCallback}
+                />
+            </div>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
