@@ -1,7 +1,16 @@
-.checkbox {
 
+.checkbox {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
 }
 
 .spanClassName {
 
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
